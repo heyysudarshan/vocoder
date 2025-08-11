@@ -38,6 +38,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.splash.screen)
     implementation(libs.activity.compose)
 }
 
