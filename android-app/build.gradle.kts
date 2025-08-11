@@ -1,5 +1,5 @@
 plugins {
-
+    alias(libs.plugins.android.application)
 }
 
 group = libs.versions.androidApp.group.get()
