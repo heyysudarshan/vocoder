@@ -1,6 +1,11 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.android.library)
 }
+
+
+group = libs.versions.composeApp.group.get()
+version = libs.versions.composeApp.version.get()
 
 kotlin {
     androidTarget()
@@ -18,9 +23,6 @@ kotlin {
         }
     }
 }
-
-group = libs.versions.composeApp.group.get()
-version = libs.versions.composeApp.version.get()
 
 // Custom build directory
 layout.buildDirectory.set(file(path = "$rootDir/.build/ComposeApp"))
