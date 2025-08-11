@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -16,6 +18,21 @@ android {
         minSdk = libs.versions.androidApp.minSdk.get().toInt()
         versionCode = libs.versions.androidApp.versionCode.get().toInt()
         versionName = libs.versions.androidApp.versionName.get()
+    }
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlin.compilerOptions {
+        jvmTarget = JvmTarget.JVM_11
+    }
+    buildFeatures {
+        compose = true
     }
 }
 
