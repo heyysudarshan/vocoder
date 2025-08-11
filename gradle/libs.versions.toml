@@ -1,5 +1,9 @@
 [versions]
 
+# android-app module's configuration information
+androidApp-group = "com.sudarshanmhasrup.vocoder"
+androidApp-version = "1.0.0"
+
 [libraries]
 
 [plugins]
