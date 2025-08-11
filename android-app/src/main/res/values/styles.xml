@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App theme -->
+    <style name="Theme.ComposeApp" parent="android:Theme.Material.NoActionBar" />
+    <!-- Splash theme -->
+    <style name="Theme.AppStarting" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.AppStarting</item>
+    </style>
+</resources>
