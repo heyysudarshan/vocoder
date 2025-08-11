@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.android.library)
 }
 
-
 group = libs.versions.composeApp.group.get()
 version = libs.versions.composeApp.version.get()
 
@@ -21,6 +20,15 @@ kotlin {
             baseName = "ComposeApp"
             isStatic = true
         }
+    }
+}
+
+android {
+    namespace = libs.versions.composeApp.namespace.get()
+    compileSdk = libs.versions.composeApp.compileSdk.get().toInt()
+
+    defaultConfig {
+        minSdk = libs.versions.composeApp.minSdk.get().toInt()
     }
 }
 
