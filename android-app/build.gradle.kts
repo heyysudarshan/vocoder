@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
 }
 
@@ -40,6 +40,7 @@ android {
 dependencies {
     implementation(libs.splash.screen)
     implementation(libs.activity.compose)
+    implementation(projects.composeApp)
 }
 
 // Custom build directory
