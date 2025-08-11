@@ -5,5 +5,18 @@ plugins {
 group = libs.versions.androidApp.group.get()
 version = libs.versions.androidApp.version.get()
 
+android {
+    namespace = libs.versions.androidApp.namespace.get()
+    compileSdk = libs.versions.androidApp.compileSdk.get().toInt()
+
+    defaultConfig {
+        applicationId = libs.versions.androidApp.applicationId.get()
+        targetSdk = libs.versions.androidApp.targetSdk.get().toInt()
+        minSdk = libs.versions.androidApp.minSdk.get().toInt()
+        versionCode = libs.versions.androidApp.versionCode.get().toInt()
+        versionName = libs.versions.androidApp.versionName.get()
+    }
+}
+
 // Custom build directory
 layout.buildDirectory.set(file(path = "$rootDir/.build/AndroidApp"))
