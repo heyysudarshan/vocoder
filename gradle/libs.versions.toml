@@ -5,6 +5,10 @@ androidGradlePlugin = "8.12.0"
 activityCompose = "1.10.1"
 splashScreen = "1.0.1"
 
+# android-app module's configuration information
+androidApp-group = "com.sudarshanmhasrup.vocoder"
+androidApp-version = "1.0.0"
+
 # android-app module's android app package information
 androidApp-namespace = "com.sudarshanmhasrup.vocoder"
 androidApp-compileSdk = "36"
@@ -14,13 +18,14 @@ androidApp-targetSdk = "36"
 androidApp-versionCode = "1"
 androidApp-versionName = "1.0.0"
 
-# android-app module's configuration information
-androidApp-group = "com.sudarshanmhasrup.vocoder"
-androidApp-version = "1.0.0"
-
 # compose-app module's configuration information
 composeApp-group = "vocoder.app.core"
 composeApp-version = "1.0.0"
+
+# compose-app module's android library package information
+composeApp-namespace = "vocoder.app.core"
+composeApp-compileSdk = "36"
+composeApp-minSdk = "24"
 
 [libraries]
 activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
