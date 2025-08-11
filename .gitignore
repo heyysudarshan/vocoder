@@ -1,7 +1,7 @@
 # Gradle cache folder
 .gradle
 
-# Idea
+# Idea configuration folder
 .idea
 
 # Kotlin cache folder
@@ -9,3 +9,6 @@
 
 # Build output folder
 .build
+
+# Local properties
+local.properties
