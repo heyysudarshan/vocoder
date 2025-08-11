@@ -4,6 +4,6 @@
     <style name="Theme.ComposeApp" parent="android:Theme.Material.NoActionBar" />
     <!-- Splash theme -->
     <style name="Theme.AppStarting" parent="Theme.SplashScreen">
-        <item name="postSplashScreenTheme">@style/Theme.AppStarting</item>
+        <item name="postSplashScreenTheme">@style/Theme.ComposeApp</item>
     </style>
 </resources>
